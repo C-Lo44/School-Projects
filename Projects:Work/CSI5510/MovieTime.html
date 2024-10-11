@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Movie Showtimes</title>
+    <!-- Add your styles here -->
+</head>
+<body>
+    <h1>Update Movie Showtimes</h1>
+    <form action="MovieTime.php" method="post">
+        <label for="movie_id">Movie ID:</label>
+        <input type="number" id="movie_id" name="movie_id" required>
+        
+        <label for="showtime">Showtime:</label>
+        <input type="time" id="showtime" name="showtime" required>
+        
+        <label for="theater">Theater:</label>
+        <select id="theater" name="theater" required>
+            <option value="Theater 1">Theater 1</option>
+            <option value="Theater 2">Theater 2</option>
+            <option value="Theater 3">Theater 3</option>
+            <option value="Theater 4">Theater 4</option>
+            <!-- Add more theaters as needed -->
+        </select>
+        
+        <input type="submit" value="Update Showtime">
+    </form>
+</body>
+</html>

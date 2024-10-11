@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Database</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-bottom: 60px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif; 
+			font-weight: italic;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #fff;
+        }
+
+        #main-content {
+            text-align: center;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        table {
+            width: 70%;
+            margin-right: 20px;
+            border-collapse: separate;
+            border-spacing: 0 10px;
+            border: 2px solid #ddd;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        td {
+            font-size: 16px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #FFD700;
+        }
+
+        #view-all-movies {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        #footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #team-members {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #team-members p {
+            font-size: 14px;
+            margin: 5px 0;
+            color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #team-members p span {
+            font-weight: italic;
+            color: #fff;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Welcome to CSI 5500 Advanced Web Design & Application Project</h1>
+    </div>
+
+    <div id="main-content">
+        <table>
+            <tr>
+                <th>View</th>
+                <th>Add</th>
+                <th>Modify</th>
+                <th>Remove</th>
+                <th>Search</th>
+            </tr>
+            <tr>
+                <td><a href="MovieView.php">Movie</a></td>
+                <td><a href="MovieAdd.html">Movie</a></td>
+                <td><a href="UpdateMovie.html">Movie</a></td>
+                <td><a href="DeleteMovie.html">Movie</a></td>
+                <td><a href="SearchMovie.html">Movie</a></td>
+            </tr>
+            <tr>
+                <td><a href="ViewPerson.php">Person</a></td>
+                <td><a href="PersonAdd.html">Person</a></td>
+                <td><a href="PersonUpdate.html">Person</a></td>
+                <td><a href="PersonDelete.html">Person</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="ReviewsMovie.php">Review</a></td>
+                <td><a href="ReviewAdd.html">Review</a></td>
+                <td><a href="html\role_upd.html">Review</a></font></td>
+				<td><a href="html\role_del.html">Review</a></font></td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="Director&Producer.php">Director</a></td>
+                <td><a href="director.html">Director</a></td>
+                <td><a href="director.html">Director</a></td>
+                <td><a href="director.html">Director</a></td>
+                <td><a href="Director&ProducerSearch.html">Director</a></td>
+            </tr>
+            <tr>
+                <td><a href="MovieToPerson.php">Movies to People</a></td>
+                <td><a href="director.html">Movies to People</a></td>
+                <td><a href="director.html">Movies to People</a></td>
+                <td><a href="director.html">Movies to People</a></td>
+                <td><a href="MovieTime.html">MovieTime</a></td>
+            </tr>
+        </table>
+
+        <img src="viewallmovie.png" alt="View All Movies" width="250" height="250">
+    </div>
+
+    <div id="view-all-movies">
+        <a class="button" href="MovieShowTime.php">
+            View All Movies
+        </a>
+    </div>
+
+    <div id="footer">
+        <div id="team-members">
+            <p><span>Team Members:</span> <span>Carlo Russo</span>, <span>Wafa Bdeir</span>, <span>Apeksha Hirisave</span>, <span>Isabella Jamil</span>, <span>Kleant Capollari</span></p>
+        </div>
+    </div>
+</body>
+
+</html>

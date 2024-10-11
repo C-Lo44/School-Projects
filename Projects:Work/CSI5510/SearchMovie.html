@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Movies by Year</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            color: #333;
+       
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .form-container label {
+            margin-right: 10px;
+        }
+        .form-container input[type="number"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            width: 100px;
+            margin-right: 10px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+          .required {
+            color: #FF0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Search for Movies by Year</h1>
+        <form method="post" action="SearchMovie.php">
+            <label for="year">Search movie by year:</label>
+            <input type="number" id="year" name="year" min="1900" max="2099" required>
+            <span class="required">*</span>
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <!-- Updated form for searching movies below a specific price -->
+    <div class="form-container" style="margin-top: 30px;">
+        <h1>Search for Movies Below a Price</h1>
+        <form method="post" action="SearchMovie.php">
+            <label for="price">Enter maximum price:</label>
+            <input type="number" id="price" name="price" min="0" required>
+            <span class="required">*</span>
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <p><span class="required">*</span> required fields</p>
+    <p><a href="MovieDB.html"><img src="goback.JPG" alt="Go Back" width="41" height="66"></a></p>
+</body>
+</html>

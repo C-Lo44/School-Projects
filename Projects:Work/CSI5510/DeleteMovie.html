@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete a Movie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h2 {
+            color: #FF0000;
+            text-align: center;
+            margin-bottom: 600px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        span.required {
+            color: #FF0000;
+        }
+        input[type="text"] {
+            width: calc(50% - 6px);
+            padding: 8px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function confirmDelete() {
+            var id = document.forms["deleteForm"]["movie_id"].value;
+            var title = document.forms["deleteForm"]["movie_title"].value;
+            if (id === "" || title === "") {
+                alert("Please enter both ID and Title to delete a movie.");
+                return false;
+            }
+            return confirm("Are you sure you want to delete the movie with ID " + id + " and title '" + title + "'?");
+        }
+    </script>
+</head>
+<body>
+    <h2>Delete a Movie</h2>
+    <form name="deleteForm" method="post" action="DeleteMovie.php" onsubmit="return confirmDelete()">
+        <p>ID: <span class="required">*</span>
+            <input type="text" name="movie_id" size="12">
+            Title: <span class="required">*</span>
+            <input type="text" name="movie_title" size="21">
+        </p>
+        <p>
+            <input type="submit" name="Submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+    <a href="MovieDB.html"><img src="goback.JPG" alt="Go Back" width="41" height="66" border="0"></a>
+</body>
+</html>

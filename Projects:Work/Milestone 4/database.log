@@ -1,0 +1,9 @@
+/bin/sh: 1: /var/www/html/database.sh: Permission denied
+/bin/sh: 1: /var/www/html/database.sh: Permission denied
+/bin/sh: 1: /var/www/html/database.sh: Permission denied
+/bin/sh: 1: /var/www/html/database.sh: Permission denied
+/bin/sh: 1: /var/www/html/database.sh: Permission denied
+/bin/sh: 1: /var/www/html/database.sh: Permission denied
+ERROR 1406 (22001) at line 2: Data too long for column 'name' at row 23
+ERROR 1406 (22001) at line 2: Data too long for column 'name' at row 23
+ERROR 1406 (22001) at line 2: Data too long for column 'name' at row 23

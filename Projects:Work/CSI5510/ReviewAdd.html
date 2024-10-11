@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 600px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px; /* Adjust width as needed */
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        label {
+            margin-right: 10px;
+            color: #555;
+        }
+        input[type="number"],
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+        input[type="number"]:focus,
+        input[type="text"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #66afe9;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+        .required {
+            color: #FF0000;
+            display: block;
+            text-align: center;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add a Review</h2>
+    <form method="post" action="ReviewAdd.php">
+        <p>Movie ID: <input type="number" name="movie_id" required></p>
+        <p>User ID: <input type="number" name="user_id" required></p>
+        <p>Rating: <input type="number" name="rating" step="0.1" min="0" max="5" required></p>
+        <p>Review Text: <textarea name="review_text" required></textarea></p>
+        <p>
+            <input type="submit" value="Submit Review">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+    <a href="MovieDB.html"><img src="goback.JPG" alt="Go Back" width="41" height="66"></a>
+
+</body>
+</html>

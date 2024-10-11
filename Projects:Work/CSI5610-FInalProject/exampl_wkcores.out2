@@ -1,0 +1,5 @@
+weighted k-cores
+0-core: A,B,C,D,E
+1-core: A,B,C,D
+2-core: A,B,C
+3-core: B,C

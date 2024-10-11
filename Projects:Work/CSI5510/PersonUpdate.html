@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Person</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 600px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        label {
+            margin-right: 10px;
+            color: #555;
+        }
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+        input[type="text"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #66afe9;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+        .required {
+            color: #FF0000;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>Update Person Details</h2>
+    <form action="PersonUpdate.php" method="post">
+        <p>ID: <span class="required">*</span> <input type="text" name="person_id" required></p>
+        <p>Name: <input type="text" name="name"></p>
+        <p>Role: 
+            <select name="role">
+                <option value="">Select Role</option>
+                <option value="Actor">Actor</option>
+                <option value="Actress">Actress</option>
+                <option value="Producer">Producer</option>
+                <option value="Writer">Writer</option>
+            </select>
+        </p>
+        <p>Contact Details: <input type="text" name="contact"></p>
+        <p>
+            <input type="submit" value="Update Person">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+    <p class="required"><span class="required">*</span> required fields</p>
+    <p><a href="MovieDB.html"><img src="goback.JPG" alt="Go Back" width="41" height="66"></a></p>
+</body>
+</html>
